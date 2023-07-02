@@ -1,0 +1,206 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 11px;
+}
+
+.nav img{
+    width: 8%;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 32px;
+
+}
+
+.nav .left{
+    display: flex;
+     
+}
+.left p{
+    margin-inline: 22px;
+    margin-top: 14px;
+     
+
+}
+.nav .right{
+    display:flex ;
+}
+.right p{
+    margin-inline: 22px;
+    margin-top: 11px;
+}
+.right  i{
+color: rgb(0, 0, 0);
+margin-top: 11px;
+font-size: 20px;
+}
+.login{
+    width: 80px;
+    height: 45px;
+    background-color: #00000000;
+    color: rgb(255, 255, 255);
+    border-color: transparent;
+}
+.signup{
+    width: 80px;
+    height: 36px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border-radius: 21px;
+    font-weight: 600;
+    margin-top: 3px;
+}
+ 
+.signup:hover{
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+.main{
+    background-image: url('../media/main.jpg');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: 1550px  ;
+}
+
+.card{
+    width: 420px;
+    height: 400px;
+    background-color: #ffffff00;
+     margin-left: 22px;
+   
+      
+}
+ 
+.card .ride {
+    display: flex;
+   border-bottom: 1px solid #a7e92f;
+   text-align: center;
+
+}
+.ride .car{
+    margin-inline: 96px;
+    margin-top: 12px; 
+    border-bottom: 4px solid #a7e92f;
+    padding: 7px;
+    margin-left: 30px;  
+}
+.card .ride i{
+    font-size: 20px;
+}
+.card h1{
+   padding: 25px;
+    margin-left: 33px;
+
+}
+.card input{
+    margin-top: 7px;
+    margin-left: 55px;
+    width: 330px;
+    height: 30px;
+    background-color: rgb(245, 245, 245);
+    padding: 8px;
+}
+.card .btn{
+    display: flex;
+    margin-left: 44px;
+    margin-top: 33px;
+}
+.card .btn .req{
+    margin-inline: 11px;
+    width: 150px;
+    height: 45px;
+    border: none;
+    background-color: #a7e92f;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+     
+
+}
+.btn button{
+    margin-inline: 11px;
+    width: 150px;
+    height: 45px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.btn button:hover{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.btn .req:hover{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.uber-ride h1{
+    font-size: 40px;
+    padding: 32px;
+}
+.uber-ride .go{
+    display: flex;
+  justify-content:center ;
+    justify-content: space-around;
+}
+.uber-ride .go .auto{
+    display: flex;
+    padding:22px ;
+}
+.uber-ride .go .auto img{
+    margin-inline: 22px;
+     width: 43%;
+}
+.uber-ride .go .auto h3{
+    margin-top: 25px;
+}
+.head h1{
+    padding: 33px;
+    font-size: 35px;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.down h1{
+    padding: 33px;
+    font-size: 33px;
+}
+
+.down{
+    background-color: rgb(240, 237, 237);
+    margin-top: 22px;
+    
+}
+.down .lode{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 33px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: black;
+    padding: 44px;
+    margin-top: 33px;
+    color: white;
+}

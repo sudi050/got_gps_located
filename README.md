@@ -1,5 +1,5 @@
 # bequem_voyage
-Bequem Voyage a ride-hailing app that prioritizes user comfort and reliability by leveraging technology, offering a stress-free and enjoyable travel experience for passengers. The title Bequem Voyage, is derived from the German word "bequem", which means "comfortable", and the French word "voyage", which means "journey". The detailed presention file is attached below.
+Bequem Voyage is a ride-hailing app that prioritizes user comfort and reliability by leveraging technology, offering a stress-free and enjoyable travel experience for passengers. The title Bequem Voyage is derived from the German word "bequem", which means "comfortable", and the French word "voyage", which means "journey".
 
 
 To activate the virtual environment
