@@ -75,7 +75,7 @@ font-size: 20px;
     height: 400px;
     background-color: #ffffff00;
      margin-left: 22px;
-   
+    border: 0px solid #a7e92f;
       
 }
  
@@ -88,7 +88,7 @@ font-size: 20px;
 .ride .car{
     margin-inline: 96px;
     margin-top: 12px; 
-    border-bottom: 4px solid #a7e92f;
+    /* border-bottom: 4px solid #a7e92f; */
     padding: 7px;
     margin-left: 30px;  
 }
@@ -107,11 +107,12 @@ font-size: 20px;
     height: 30px;
     background-color: rgb(245, 245, 245);
     padding: 8px;
+    box-sizing: content-box;
 }
 .card .btn{
     display: flex;
-    margin-left: 44px;
-    margin-top: 33px;
+    margin-left: 35px;
+    margin-top: 20px;
 }
 .card .btn .req{
     margin-inline: 11px;
@@ -125,7 +126,7 @@ font-size: 20px;
      
 
 }
-.btn button{
+.card .btn button{
     margin-inline: 11px;
     width: 150px;
     height: 45px;
@@ -136,7 +137,7 @@ font-size: 20px;
     border-radius: 5px;
 }
 
-.btn button:hover{
+.card .btn button:hover{
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     cursor: pointer;

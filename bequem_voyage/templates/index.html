@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bequem Voyage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/popup.css' %}">
     <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto+Condensed:wght@700&family=Roboto+Slab&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-
+    
 </head>
 <body>
-     <div class="main">
         <div class="nav">
             <div class="left">
                 <img src="{% static 'media/bv.svg' %}" alt="">
@@ -25,13 +27,14 @@
                 <button class="signup">Sign up</button>
             </div>
         </div>
+        <div class="main">
         <div class="card">
             <div class="ride">
-                <div class="car">
+                <div class="car" id="one">
                     <i class="fa-solid fa-car"></i>
                     <p>one Way</p>
                 </div>
-                <div class="car">
+                <div class="car" id="two">
                     <i class="fa-sharp fa-light fa-right-left-large fa-rotate-90"></i>
                     <p>Two way</p>
                 </div>
@@ -40,12 +43,16 @@
                 <input type="text" placeholder="Enter Pickup Location"><br>
                 <input type="text" placeholder="Enter Destination">
                 <div class="btn">
-                    <button class="req">Request Now</button>
+                    <button class="req" onclick="openForm()">Request Now</button>
                     <button>Schedule for later</button>
                 </div>
         </div>
      </div>
-
+     <div class="popup" id="myForm">
+        <div class="right">
+            <button type="button" class="btn-close" aria-label="Close" onclick="closeForm()"></button>
+        </div>
+     </div>
     <!-- <div class="uber-ride">
         <h1>Ride with Uber</h1>
         <div class="go">
@@ -138,5 +145,6 @@
                 <p>Cities</p>
             </div>
         </div>
+        <script src="{% static 'js/popup.js' %}"></script>
 </body>
 </html>
