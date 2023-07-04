@@ -92,10 +92,14 @@ font-size: 20px;
 .ride .car{
     margin-inline: 96px;
     margin-top: 12px; 
-    border-bottom: 4px solid #a7e92f;
-    padding: 5px;
-    margin-left: 80px;  
+    cursor: pointer;
+    padding: 7px;
+    margin-left: 30px;  
 }
+.selected {
+    border-bottom: 4px solid #a7e92f;
+}
+
 .card .ride i{
     font-size: 20px;
 }
@@ -128,7 +132,7 @@ font-size: 20px;
     font-weight: 600;
     border-radius: 5px;
 }
-.btn button{
+.card .btn button{
     margin-inline: 11px;
     width: 150px;
     height: 45px;
@@ -139,7 +143,7 @@ font-size: 20px;
     border-radius: 5px;
 }
 
-.btn button:hover{
+.card .btn button:hover{
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     cursor: pointer;
