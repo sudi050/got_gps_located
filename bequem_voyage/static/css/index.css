@@ -3,10 +3,14 @@
     padding: 0%;
     font-family: 'Poppins', sans-serif;
 }
+body{
+    background-image: url('https://www.tripsavvy.com/thmb/pT_ZAje6cYUx8w2b4nsCk3FrxRU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/car-traveling-along-winding-road--maui--hawaii--america--usa-737142515-9d7096b173654472968075d805273c8f.jpg');
+}
+
 .nav{
     display: flex;
     justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #322f2fc1;
     color: white;
     padding: 11px;
 }
@@ -14,7 +18,7 @@
 .nav img{
     width: 8%;
     background-color: rgba(0, 0, 0, 0);
-    margin-left: 32px;
+    margin-left: 2px;
 
 }
 
@@ -52,45 +56,45 @@ font-size: 20px;
     height: 36px;
     background-color: #000000;
     color: rgb(255, 255, 255);
-    border-radius: 21px;
+    border-radius: 15px;
     font-weight: 600;
     margin-top: 3px;
 }
  
 .signup:hover{
-    background-color: transparent;
+    background-color: whitesmoke;
     color: rgb(0, 0, 0);
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid whitesmoke;
     cursor: pointer;
 }
 .main{
-    background-image: url('../media/main.jpg');
-    height: 600px;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: 1550px  ;
+    margin-top: 0px;
 }
 
 .card{
-    width: 420px;
+    width: 440px;
     height: 400px;
-    background-color: #ffffff00;
-     margin-left: 22px;
-   
-      
+    background-color: #322f2fc1;
+    margin-left:550px;
+    margin-top: 50px;
 }
  
 .card .ride {
     display: flex;
    border-bottom: 1px solid #a7e92f;
    text-align: center;
+   color:#ffffff;
 
 }
 .ride .car{
     margin-inline: 96px;
     margin-top: 12px; 
     border-bottom: 4px solid #a7e92f;
-    padding: 7px;
-    margin-left: 30px;  
+    padding: 5px;
+    margin-left: 80px;  
 }
 .card .ride i{
     font-size: 20px;
@@ -98,6 +102,7 @@ font-size: 20px;
 .card h1{
    padding: 25px;
     margin-left: 33px;
+    color:#ffffff;
 
 }
 .card input{
@@ -106,15 +111,15 @@ font-size: 20px;
     width: 330px;
     height: 30px;
     background-color: rgb(245, 245, 245);
-    padding: 8px;
+    padding: 5px;
 }
 .card .btn{
     display: flex;
     margin-left: 44px;
-    margin-top: 33px;
+    margin-top: 30px;
 }
 .card .btn .req{
-    margin-inline: 11px;
+    margin-inline: 15px;
     width: 150px;
     height: 45px;
     border: none;
@@ -122,8 +127,6 @@ font-size: 20px;
     color: white;
     font-weight: 600;
     border-radius: 5px;
-     
-
 }
 .btn button{
     margin-inline: 11px;
