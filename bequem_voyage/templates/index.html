@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% load static %}
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,13 +18,13 @@
         <div class="nav">
             <div class="left">
                 <img src="{% static 'media/bv.svg' %}" alt="">
-                <p>About</p>
+                <p>Learn More</p>
                 <p>Help</p>
             </div>
             
             <div class="right">
-                <button class="login">Log in</button>
-                <button class="signup">Sign up</button>
+                <button class="login">LOG IN</button>
+                <button class="signup">SIGN-UP</button>
             </div>
         </div>
         <div class="main">
@@ -36,7 +36,7 @@
                             <p>One Way</p>
                         </div>
                         <div class="car" id="two" onclick="swap('two')">
-                            <i class="fa-sharp fa-light fa-right-left-large fa-rotate-90"></i>
+                        <img src ="{% static 'media/twoway.png' %}" alt = "">
                             <p>Two Way</p>
                         </div>
                     </div>
