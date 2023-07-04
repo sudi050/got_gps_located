@@ -28,25 +28,28 @@
             </div>
         </div>
         <div class="main">
-        <div class="card">
-            <div class="ride">
-                <div class="car" id="one">
-                    <i class="fa-solid fa-car"></i>
-                    <p>one Way</p>
-                </div>
-                <div class="car" id="two">
-                    <i class="fa-sharp fa-light fa-right-left-large fa-rotate-90"></i>
-                    <p>Two way</p>
-                </div>
-            </div>           
-                <h1>Request a ride now</h1>
-                <input type="text" placeholder="Enter Pickup Location"><br>
-                <input type="text" placeholder="Enter Destination">
-                <div class="btn">
-                    <button class="req" onclick="openForm()">Request Now</button>
-                    <button>Schedule for later</button>
-                </div>
-        </div>
+            <div class="card">
+                <form>
+                    <div class="ride">
+                        <div class="car selected" id="one" onclick="swap('one')">
+                            <i class="fa-solid fa-car"></i>
+                            <p>One Way</p>
+                        </div>
+                        <div class="car" id="two" onclick="swap('two')">
+                            <i class="fa-sharp fa-light fa-right-left-large fa-rotate-90"></i>
+                            <p>Two Way</p>
+                        </div>
+                    </div>
+                    <h1>Request a ride now</h1>
+                    <input type="text" name="pickup" placeholder="Enter Pickup Location">
+                    <input type="text" name="destination" placeholder="Enter Destination">
+                    <input type="text" id="mode" name="mode" style="display: none;">
+                    <div class="btn">
+                        <button class="req" onclick="openForm()">Request Now</button>
+                        <button>Schedule for later</button>
+                    </div>
+                </form>
+            </div>            
      </div>
      <div class="popup" id="myForm">
         <div class="right">
@@ -145,6 +148,6 @@
                 <p>Cities</p>
             </div>
         </div>
-        <script src="{% static 'js/popup.js' %}"></script>
+        <script src="{% static 'js/index.js' %}"></script>
 </body>
 </html>

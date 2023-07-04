@@ -88,10 +88,14 @@ font-size: 20px;
 .ride .car{
     margin-inline: 96px;
     margin-top: 12px; 
-    /* border-bottom: 4px solid #a7e92f; */
+    cursor: pointer;
     padding: 7px;
     margin-left: 30px;  
 }
+.selected {
+    border-bottom: 4px solid #a7e92f;
+}
+
 .card .ride i{
     font-size: 20px;
 }
