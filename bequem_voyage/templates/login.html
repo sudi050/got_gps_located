@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "{% static 'css/login.css' %}">
+    <title>Login</title>
+</head>
+<body>
+<div class="wrapper">
+      <div class="title-text">
+        <div class="title login">Login</div>
+      </div>
+      {% csrf_token %}
+        <div class="form-inner">
+          <form action="" class="login"method="POST">
+            <div class="field">
+              <input type="text" placeholder="username" name = 'username' required>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" name="password" required>
+            </div>
+            <div class="pass-link"><a href="/reset_password">Forgot password?</a></div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Login">
+            </div>
+            <div class="signup-link">Not a member? <a href="/signup">Signup now</a></div>
+            <!-- <img src = " {% static 'media/bv.png'%}" class="center"> -->
+          </form>
+          {% for message in messages %}
+          <p>{{ message }}</p>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <script src="{% static 'js/login.js ' %}"></script>
+</body>
+</html>
