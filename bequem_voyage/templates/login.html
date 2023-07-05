@@ -16,10 +16,10 @@
       {% csrf_token %}
         <div class="form-inner">
           <form action="" class="login"method="POST">
-            <div class="field">
+            <div class="fields">
               <input type="text" placeholder="username" name = 'username' required>
-            </div>
-            <div class="field">
+            </div>  
+            <div class="fields">
               <input type="password" placeholder="Password" name="password" required>
             </div>
             <div class="pass-link"><a href="/reset_password">Forgot password?</a></div>
@@ -28,7 +28,7 @@
               <input type="submit" value="Login">
             </div>
             <div class="signup-link">Not a member? <a href="/signup">Signup now</a></div>
-            <!-- <img src = " {% static 'media/bv.png'%}" class="center"> -->
+            <img src = " {% static 'media/BVB.svg'%}" class="center" style="width: 30%;">
           </form>
           {% for message in messages %}
           <p>{{ message }}</p>

@@ -10,7 +10,7 @@ To activate the virtual environment
 To start the server
 ```
 cd ./bequem_voyage
-python manage.py 
+python manage.py runserver
 ```
 The app will be available on 127.0.0.1:8000
 
