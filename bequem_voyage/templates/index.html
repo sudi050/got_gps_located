@@ -19,10 +19,13 @@
                 <p>Learn More</p>
                 <p>Help</p>
             </div>
-            
             <div class="right">
+                {% if user.is_authenticated %}
+                <a href="/login"><button class="signup">Profile</button></a>
+                {% else %}
                 <a href="/login"><button class="login">LOG-IN</button></a>
                 <a href="/signup"><button class="signup">SIGN-UP</button></a>
+                {% endif %}
             </div>
         </div>
         <div class="main">
