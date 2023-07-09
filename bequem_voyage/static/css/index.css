@@ -5,6 +5,8 @@
 }
 body{
     background-image: url('https://www.tripsavvy.com/thmb/pT_ZAje6cYUx8w2b4nsCk3FrxRU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/car-traveling-along-winding-road--maui--hawaii--america--usa-737142515-9d7096b173654472968075d805273c8f.jpg');
+    background-repeat: no-repeat;
+    background-size: 105% 100%;
 }
 
 .nav{
@@ -67,6 +69,10 @@ font-size: 20px;
     border: 2px solid whitesmoke;
     cursor: pointer;
 }
+button:hover{
+    color: rgb(150, 138, 138);
+    cursor: pointer;
+}
 .main{
     height: 100vh;
     background-repeat: no-repeat;
@@ -93,21 +99,20 @@ font-size: 20px;
     margin-inline: 96px;
     margin-top: 12px; 
     cursor: pointer;
-    padding: 7px;
-    margin-left: 30px;  
+    padding: 5px;
+    margin-left: 80px;  
 }
-.selected {
-    border-bottom: 4px solid #a7e92f;
-}
-
 .card .ride i{
     font-size: 20px;
+}
+.selected{
+    border-bottom: 4px solid #a7e92f;
 }
 .card h1{
    padding: 25px;
     margin-left: 33px;
     color:#ffffff;
-
+    font-size: 32;
 }
 .card input{
     margin-top: 7px;
@@ -132,7 +137,7 @@ font-size: 20px;
     font-weight: 600;
     border-radius: 5px;
 }
-.card .btn button{
+.btn button{
     margin-inline: 11px;
     width: 150px;
     height: 45px;
@@ -143,7 +148,7 @@ font-size: 20px;
     border-radius: 5px;
 }
 
-.card .btn button:hover{
+.btn button:hover{
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     cursor: pointer;
@@ -152,27 +157,6 @@ font-size: 20px;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     cursor: pointer;
-}
-
-.uber-ride h1{
-    font-size: 40px;
-    padding: 32px;
-}
-.uber-ride .go{
-    display: flex;
-  justify-content:center ;
-    justify-content: space-around;
-}
-.uber-ride .go .auto{
-    display: flex;
-    padding:22px ;
-}
-.uber-ride .go .auto img{
-    margin-inline: 22px;
-     width: 43%;
-}
-.uber-ride .go .auto h3{
-    margin-top: 25px;
 }
 .head h1{
     padding: 33px;
@@ -208,6 +192,5 @@ font-size: 20px;
     justify-content: space-around;
     background-color: black;
     padding: 44px;
-    margin-top: 33px;
     color: white;
 }

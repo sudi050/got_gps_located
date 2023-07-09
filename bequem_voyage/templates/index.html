@@ -6,10 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bequem Voyage</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
-    <link rel="stylesheet" href="{% static 'css/popup.css' %}">
     <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto+Condensed:wght@700&family=Roboto+Slab&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     
@@ -23,8 +21,8 @@
             </div>
             
             <div class="right">
-                <button class="login">LOG IN</button>
-                <button class="signup">SIGN-UP</button>
+                <a href="/login"><button class="login">LOG-IN</button></a>
+                <a href="/signup"><button class="signup">SIGN-UP</button></a>
             </div>
         </div>
         <div class="main">
@@ -36,7 +34,7 @@
                             <p>One Way</p>
                         </div>
                         <div class="car" id="two" onclick="swap('two')">
-                        <img src ="{% static 'media/twoway.png' %}" alt = "">
+                        <img src ="{% static 'media/twoway.png' %}" alt = "" style="width: 20px; height: 20px;">
                             <p>Two Way</p>
                         </div>
                     </div>
@@ -45,108 +43,15 @@
                     <input type="text" name="destination" placeholder="Enter Destination">
                     <input type="text" id="mode" name="mode" style="display: none;">
                     <div class="btn">
-                        <button class="req" onclick="openForm()">Request Now</button>
+                        <button class="req">Request Now</button>
                         <button>Schedule for later</button>
                     </div>
                 </form>
             </div>            
      </div>
-     <div class="popup" id="myForm">
-        <div class="right">
-            <button type="button" class="btn-close" aria-label="Close" onclick="closeForm()"></button>
-        </div>
-     </div>
-    <!-- <div class="uber-ride">
-        <h1>Ride with Uber</h1>
-        <div class="go">
-            <div class="auto">
-                <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_84,h_84/v1649914471/assets/89/8e4239-5e7d-4de7-bf71-00cc32d468db/original/Auto-150X150p4x.png" alt="">
-               <div>
-                <h3>Uber Moto</h3>
-                <p>Get affordable uber auto ride with no hangling.   </p>
-               </div>
-            </div>
-            <div class="auto">
-                <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_84,h_84/v1649914539/assets/86/82f8b3-e2e6-45f8-a8f7-fdc511f709e0/original/Moto-150X150p4x.png" alt="">
-                <div>
-                    <h3>Uber Moto</h3>
-                    <p>Get affordable uber auto ride with no hangling. </p>   
-                   </div>
-            </div>
-        </div>
-      <div class="go">
-        <div class="auto">
-            <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_84,h_84/v1630531077/assets/38/494083-cc23-4cf7-801c-0deed7d9ca55/original/uber-hourly.png" alt="">
-            <div>
-                <h3>Uber Moto</h3>
-                <p>Get affordable uber auto ride with no hangling. </p>
-               </div>
-        </div>
-        <div class="auto">
-            <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_84,h_84/v1649914597/assets/f7/7f583f-447a-4cf7-8da6-6ad254f0a66b/original/Intercity-150X150p4x.png" alt="">
-            <div>
-                <h3>Uber Moto</h3>
-                <p>Get affordable uber auto ride with no hangling. </p>   
-               </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="head">
-        <h1>Focused on safety, wherever you go</h1>
-    </div>
-    <div class="cards">
-         <div class="img">
-            <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_499,h_333/v1613520218/assets/3e/e98625-31e6-4536-8646-976a1ee3f210/original/Safety_Home_Img2x.png" alt="">
-            <h3>Our commitment to your safety</h3>
-         </div>
-         <div class="img">
-            <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_499,h_333/v1613520285/assets/c2/91ea9c-90d7-4c36-a740-d7844536694e/original/Cities_Home_Img2x.png" alt="">
-            <h3>Setting 10,000+ cities in motion</h3>
-         </div>
-    </div>
-    <div class="down">
-        <h1>Ther's more to love in the apps</h1>
-        <div class="lode">
-            <div class="btn">
-                <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_84,h_84/v1618459257/assets/13/6bfdbd-cdb6-4221-92c1-cab1feaa39f3/original/Rider-App-logo.png" alt="">
-                <h3>Downlode the Uber App</h3>
-            </div>
-            <div class="btn">
-                <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_84,h_84/v1618459257/assets/13/6bfdbd-cdb6-4221-92c1-cab1feaa39f3/original/Rider-App-logo.png" alt="">
-                <h3>Downlode the Driver App</h3>
-            </div>
-        </div>
-    </div> -->
-        <div class="footer">
-            <div class="list">
-                <p>About us</p><br>
-                <p>Media</p><br>
-                <p>Investors</p><br>
-                <p>Blog</p>
-
-            </div>
-
-            <div class="list">
-                <h3>Products     </h3><br>
-                <p>Ride</p><br>
-                <p>Drive</p><br>
-                <p>Deliver</p><br>
-
-            </div>
-
-            <div class="list">
-                <h3>Global citizenship</h3><br>
-                <p>Safety</p><br>
-                <p>Diversity and Inclusion</p>
-                
-            </div>
-
-            <div class="list">
-                <h3>Travel</h3><br>
-                <p>Airports</p><br>
-                <p>Cities</p>
-            </div>
+        <div class="footer" align="center">
+        ©Bequem Voyage.<br>
+        incode 2023
         </div>
         <script src="{% static 'js/index.js' %}"></script>
 </body>

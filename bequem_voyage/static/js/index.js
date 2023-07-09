@@ -1,12 +1,3 @@
-function openForm() {
-    document.getElementById("myForm").style.display = "block";
-    console.log("openForm");
-  }
-  
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  } 
-
   function swap(option) {
     const cars = document.querySelectorAll('.car');
     cars.forEach((car) => {
