@@ -1,22 +1,18 @@
 # bequem_voyage
-Bequem Voyage is a ride-hailing app that prioritizes user comfort and reliability by leveraging technology, offering a stress-free and enjoyable travel experience for passengers. The title Bequem Voyage is derived from the German word "bequem", which means "comfortable", and the French word "voyage", which means "journey".
+Bequem Voyage is a ride-hailing app that prioritizes user comfort and reliability by leveraging technology, offering passengers a stress-free and enjoyable travel experience. The title Bequem Voyage is derived from the German word "bequem", which means "comfortable", and the French word "voyage", which means "journey".
 
+## Features
+- Driver Profile and sharing of passenger details which require extra care
+- identification best suitable place for having food and breaks
+- dynamic fare breakdown for the trip
 
-To activate the virtual environment
-```
-.\incode\Scripts\activate
-```
+## Screenshots
 
-To start the server
-```
-cd ./bequem_voyage
-python manage.py runserver
-```
-The app will be available on 127.0.0.1:8000
+## Tech Stack
+- Django
+- SQLite3
 
-#### if you are running the server for the first time, run these commands
-```
-pyhton -m venv incode
-.\incode\Scripts\activate
-pip install -r requirements.txt
-```
+## Future Work
+- listing of places of attraction according to the passenger's taste
+- implementation of driver's driving score
+- feature to order food or reserve a seat
