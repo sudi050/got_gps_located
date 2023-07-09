@@ -6,8 +6,6 @@ Bequem Voyage is a ride-hailing app that prioritizes user comfort and reliabilit
 - identification best suitable place for having food and breaks
 - dynamic fare breakdown for the trip
 
-## Screenshots
-
 ## Tech Stack
 - Django
 - SQLite3
@@ -29,13 +27,6 @@ cd ./bequem_voyage
 python manage.py runserver
 ```
 The app will be available on 127.0.0.1:8000
-
-#### if you are running the server for the first time, run these commands
-```
-pyhton -m venv incode
-.\incode\Scripts\activate
-pip install -r requirements.txt
-```
 
 ## Screenshots
 
