@@ -1,0 +1,48 @@
+body {
+    background-image:url("https://www.fabhotels.com/blog/wp-content/uploads/2020/05/Road-Trips-Are-Safer-and-Hassle.jpg");
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color:#a7e92f;
+
+}
+
+.profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #a7e92f;
+
+}
+
+.profile-button:focus {
+    background: #a7e92f;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #a7e92f;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #a7e92f;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+
+.add-experience:hover {
+    background: #a7e92f;
+    color: #a7e92f;
+    cursor: pointer;
+    border: solid 1px #a7e92f
+}
