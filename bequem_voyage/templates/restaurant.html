@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Restaurants</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #aaff0f;
+        }
+        
+        .restaurant {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+        }
+        
+        .restaurant img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .restaurant-details {
+            display: flex;
+            align-items: center;
+        }
+        
+        .restaurant-info {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+        
+        .restaurant-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .restaurant-location {
+            font-size: 16px;
+        }
+        
+        .restaurant-time {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        
+        .restaurant-cuisine {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        
+        .restaurant-contact {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        
+        .restaurant-button {
+            margin-top: 10px;
+        }
+        
+        hr {
+            margin: 20px 0;
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>List of Restaurants</h1>
+    
+    <div class="restaurant">
+        <div class="restaurant-details">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm8QeF03HD5QwiWEvOtVxwahoeePtK8EcX6A&usqp=CAU" alt="Restaurant 1">
+            <div class="restaurant-info">
+                <div class="restaurant-name">Indian Coffee House</div>
+                <div class="restaurant-location">Location: palakkad</div>
+                <div class="restaurant-time">Estimated Time of Arrival: 20 minutes</div>
+                <div class="restaurant-cuisine">Cuisines: Indian</div>
+                <div class="restaurant-contact">Contact: 123-456-7890</div>
+                <a class="restaurant-button" href="https://www.restaurant1.com" target="_blank">Order Food</a>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <div class="restaurant">
+        <div class="restaurant-details">
+            <img src="data:image/jpeg;base64,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" alt="Restaurant 2">
+            <div class="restaurant-info">
+                <div class="restaurant-name">Calicut Paragon</div>
+                <div class="restaurant-location">Location: Kochi</div>
+                <div class="restaurant-time">Estimated Time of Arrival: 2 hrs</div>
+                <div class="restaurant-cuisine">Cuisines: Chinese, Indian, American, British</div>
+                <div class="restaurant-contact">Contact: 987-654-3210</div>
+                <a class="restaurant-button" href="https://www.restaurant2.com" target="_blank">Order Food</a>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <!-- Add more restaurants here with similar structure -->
+    
+</body>
+</html>

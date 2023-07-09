@@ -10,52 +10,51 @@
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
     <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto+Condensed:wght@700&family=Roboto+Slab&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-    
 </head>
 <body>
-        <div class="nav">
-            <div class="left">
-                <img src="{% static 'media/bv.svg' %}" alt="">
-                <p>Learn More</p>
-                <p>Help</p>
-            </div>
-            <div class="right">
-                {% if user.is_authenticated %}
-                <a href="/login"><button class="signup">Profile</button></a>
-                {% else %}
-                <a href="/login"><button class="login">LOG-IN</button></a>
-                <a href="/signup"><button class="signup">SIGN-UP</button></a>
-                {% endif %}
-            </div>
+    <div class="nav">
+        <div class="left">
+            <img src="{% static 'media/bv.svg' %}" alt="">
+            <p>Learn More</p>
+            <p>Help</p>
         </div>
-        <div class="main">
-            <div class="card">
-                <form>
-                    <div class="ride">
-                        <div class="car selected" id="one" onclick="swap('one')">
-                            <i class="fa-solid fa-car"></i>
-                            <p>One Way</p>
-                        </div>
-                        <div class="car" id="two" onclick="swap('two')">
-                        <img src ="{% static 'media/twoway.png' %}" alt = "" style="width: 20px; height: 20px;">
-                            <p>Two Way</p>
-                        </div>
+        <div class="right">
+            {% if user.is_authenticated %}
+            <a href="/profile"><button class="signup">Profile</button></a>
+            {% else %}
+            <a href="/login"><button class="login">LOG-IN</button></a>
+            <a href="/signup"><button class="signup">SIGN-UP</button></a>
+            {% endif %}
+        </div>
+    </div>
+    <div class="main">
+        <div class="card">
+            <form action="/cars" method="get">
+                <div class="ride">
+                    <div class="car selected" id="one" onclick="swap('one')">
+                        <i class="fa-solid fa-car"></i>
+                        <p>One Way</p>
                     </div>
-                    <h1>Request a ride now</h1>
-                    <input type="text" name="pickup" placeholder="Enter Pickup Location">
-                    <input type="text" name="destination" placeholder="Enter Destination">
-                    <input type="text" id="mode" name="mode" style="display: none;">
-                    <div class="btn">
-                        <button class="req">Request Now</button>
-                        <button>Schedule for later</button>
+                    <div class="car" id="two" onclick="swap('two')">
+                        <img src="{% static 'media/twoway.png' %}" alt="" style="width: 20px; height: 20px;">
+                        <p>Two Way</p>
                     </div>
-                </form>
-            </div>            
-     </div>
-        <div class="footer" align="center">
+                </div>
+                <h1>Request a ride now</h1>
+                <input type="text" name="pickup" placeholder="Enter Pickup Location" required>
+                <input type="text" name="destination" placeholder="Enter Destination" required>
+                <input type="text" id="mode" name="mode" style="display: none;">
+                <div class="btn">
+                    <button class="req" type="submit">Request Now</button>
+                    <button>Schedule for later</button>
+                </div>
+            </form>
+        </div>            
+    </div>
+    <div class="footer" align="center">
         ©Bequem Voyage.<br>
         incode 2023
-        </div>
-        <script src="{% static 'js/index.js' %}"></script>
+    </div>
+    <script src="{% static 'js/index.js' %}"></script>
 </body>
 </html>
