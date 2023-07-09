@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+<head>
+    <title>Taxi Receipt</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <div class="receipt">
+        <h1>Taxi Receipt</h1>
+        <p>Date: <span id="date"></span></p>
+        <p>From: Palakkad</p>
+        <p>To: Kollam</p>
+        <p>Distance: 275 km</p>
+        <p>Rate per kilometer: Rs 20</p>
+        <p>Total fare: <span id="fare"></span></p>
+        <button id="price-button" class="price-button">Show Price Breakdown</button>
+        <div id="price-breakdown" class="price-breakdown">
+            <p>Minimum travel fare: Rs 30</p>
+            <p>Distance traveled * Fare for running kilometers: Rs <span id="distance-fare"></span></p>
+            <p>Car maintenance fee: Rs 1000 per 150 km</p>
+            <p>Petrol charge: Rs <span id="petrol-charge"></span></p>
+        </div>
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

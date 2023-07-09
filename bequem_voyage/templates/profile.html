@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bequem Voyage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/lscss.css'%}">
+    <link rel="stylesheet" href="{% static 'css/index.css'%}">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="container rounded bg-white mt-10 mb-10">
+        <div class="row">
+            <div class="col-md-3 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                    <img class="rounded-circle mt-5" width="170px" src="https://www.shutterstock.com/image-vector/upload-profile-icon-design-vector-260nw-1980453848.jpg">
+                    <span class="font-weight-bold">{{ name }}</span>
+                    <span class="text-black-50">{{ email }}</span>
+                    <span class="font-weight-bold">{{ mobile }}</span>
+                </div>
+            </div>
+            <div class="col-md-5 border-right">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Profile Settings</h4>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6"><label class="labels">Name</label></div>
+                        <div class="col-md-6"><label class="labels font-weight-bold">{{name}}</label></div><br>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6"><label class="labels">Mobile Number</label></div>
+                        <div class="col-md-6"><label class="labels font-weight-bold">{{ mobile }}</label></div><br>
+                    </div>
+                        <div class="row mt-3">
+                        <div class="col-md-6"><label class="labels">Address</label></div>                        
+                        <div class="col-md-6"><label class="labels">{{ address }}</label></div><br>   
+                    </div>
+                        <div class="row mt-3">    
+                        <div class="col-md-6"><label class="labels">Email ID</label></div>
+                        <div class="col-md-6"><label class="labels font-weight-bold">{{ email }}</label></div><br>
+                    </div>
+                        <div class="row mt-3">
+                        <div class="col-md-6"><label class="labels">Health</label></div>
+                        <div class="col-md-6"><label class="labels">{{ health }}</label></div><br>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6"><label class="labels">Country</label></div>
+                        <div class="col-md-6"><label class="labels">{{ country }}</label></div><br>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6"><label class="labels">State/Region</label></div>
+                        <div class="col-md-6"><label class="labels">{{ state }}</label></div><br>
+                    </div>
+                </div>
+                <div class='btn'>
+                <a href="/pricing"><button class="req">Fare Breakdown</button></a>
+                <a href="/booking"><button class="req" >Book Now</button></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center experience"><span>Preferences</span><span class="border px-3 p-1 add-experience"><i class="fa fa-plus"></i>&nbsp;Preferences</span></div><br>
+                    <div class="col-md-12"><label class="labels">Additional Details</label></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -137,6 +137,18 @@ button:hover{
     font-weight: 600;
     border-radius: 5px;
 }
+
+.btn .req{
+    margin-inline: 15px;
+    width: 150px;
+    height: 45px;
+    border: none;
+    background-color: #a7e92f;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
 .btn button{
     margin-inline: 11px;
     width: 150px;
