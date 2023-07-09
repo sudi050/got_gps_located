@@ -15,6 +15,7 @@ Bequem Voyage is a ride-hailing app that prioritizes user comfort and reliabilit
 - implementation of driver's driving score
 - feature to order food or reserve a seat
 
+<hr>
 
 To activate the virtual environment
 ```
