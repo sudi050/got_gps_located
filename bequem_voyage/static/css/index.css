@@ -1,59 +1,58 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     font-family: 'Poppins', sans-serif;
-}
-body{
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+  }
+  
+  body {
     background-image: url('https://www.tripsavvy.com/thmb/pT_ZAje6cYUx8w2b4nsCk3FrxRU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/car-traveling-along-winding-road--maui--hawaii--america--usa-737142515-9d7096b173654472968075d805273c8f.jpg');
     background-repeat: no-repeat;
-    background-size: 105% 100%;
-}
-
-.nav{
+    background-size: cover; /* Adjust the background image to cover the entire viewport */
+  }
+  
+  .nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Spread navigation items horizontally */
     background-color: #322f2fc1;
     color: white;
     padding: 11px;
-}
-
-.nav img{
+  }
+  
+  .nav img {
     width: 8%;
     background-color: rgba(0, 0, 0, 0);
     margin-left: 2px;
-
-}
-
-.nav .left{
+  }
+  
+  .nav .left {
     display: flex;
-     
-}
-.left p{
+    align-items: center; /* Center align navigation items vertically */
+  }
+  
+  .left p {
     margin-inline: 22px;
     margin-top: 14px;
-     
-
-}
-.nav .right{
-    display:flex ;
-}
-.right p{
+  }
+  
+  .nav .right {
+    display: flex;
+    align-items: center; /* Center align navigation items vertically */
+  }
+  
+  .right p {
     margin-inline: 22px;
     margin-top: 11px;
-}
-.right  i{
-color: rgb(0, 0, 0);
-margin-top: 11px;
-font-size: 20px;
-}
-.login{
-    width: 80px;
-    height: 45px;
-    background-color: #00000000;
-    color: rgb(255, 255, 255);
-    border-color: transparent;
-}
-.signup{
+  }
+  
+  .right i {
+    color: rgb(0, 0, 0);
+    margin-top: 11px;
+    font-size: 20px;
+  }
+  
+  .login,
+  .signup {
     width: 80px;
     height: 36px;
     background-color: #000000;
@@ -61,73 +60,69 @@ font-size: 20px;
     border-radius: 15px;
     font-weight: 600;
     margin-top: 3px;
-}
- 
-.signup:hover{
+  }
+  
+  .signup:hover,
+  .login:hover {
     background-color: whitesmoke;
     color: rgb(0, 0, 0);
     border: 2px solid whitesmoke;
     cursor: pointer;
-}
-button:hover{
+  }
+  
+  button:hover {
     color: rgb(150, 138, 138);
     cursor: pointer;
-}
-.main{
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: 1550px  ;
-    margin-top: 0px;
-}
-
-.card{
-    width: 440px;
-    height: 400px;
-    background-color: #322f2fc1;
-    margin-left:550px;
-    margin-top: 50px;
-}
- 
-.card .ride {
+  }
+  
+  .card .ride {
     display: flex;
-   border-bottom: 1px solid #a7e92f;
-   text-align: center;
-   color:#ffffff;
-
-}
-.ride .car{
+    justify-content: center;
+    border-bottom: 1px solid #a7e92f;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .ride .car {
     margin-inline: 96px;
-    margin-top: 12px; 
+    margin-top: 12px;
     cursor: pointer;
     padding: 5px;
-    margin-left: 80px;  
-}
-.card .ride i{
+    margin-left: 80px;
+  }
+  
+  .card .ride i {
     font-size: 20px;
-}
-.selected{
+  }
+  
+  .selected {
     border-bottom: 4px solid #a7e92f;
-}
-.card h1{
-   padding: 25px;
-    margin-left: 33px;
-    color:#ffffff;
-    font-size: 32;
-}
-.card input{
+  }
+  
+  .card h1 {
+    padding: 25px;
+    margin: 0;
+    font-size: 32px;
+  }
+  
+  .card input {
     margin-top: 7px;
-    margin-left: 55px;
-    width: 330px;
+    margin-left: 0;
+    width: 90%;
+    max-width: 330px;
     height: 30px;
     background-color: rgb(245, 245, 245);
     padding: 5px;
-}
-.card .btn{
+  }
+  
+  .card .btn {
     display: flex;
-    margin-left: 44px;
+    justify-content: center;
     margin-top: 30px;
-}
-.card .btn .req{
+    flex-wrap: wrap; /* Wrap buttons to the next line on smaller screens */
+  }
+  
+  .card .btn .req {
     margin-inline: 15px;
     width: 150px;
     height: 45px;
@@ -136,20 +131,9 @@ button:hover{
     color: white;
     font-weight: 600;
     border-radius: 5px;
-}
-
-.btn .req{
-    margin-inline: 15px;
-    width: 150px;
-    height: 45px;
-    border: none;
-    background-color: #a7e92f;
-    color: white;
-    font-weight: 600;
-    border-radius: 5px;
-}
-
-.btn button{
+  }
+  
+  .btn button {
     margin-inline: 11px;
     width: 150px;
     height: 45px;
@@ -158,51 +142,54 @@ button:hover{
     color: white;
     font-weight: 600;
     border-radius: 5px;
-}
-
-.btn button:hover{
+  }
+  
+  .btn button:hover {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     cursor: pointer;
-}
-.btn .req:hover{
+  }
+  
+  .btn .req:hover {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     cursor: pointer;
-}
-.head h1{
-    padding: 33px;
-    font-size: 35px;
-}
-.cards {
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-}
-
-.down h1{
-    padding: 33px;
-    font-size: 33px;
-}
-
-.down{
-    background-color: rgb(240, 237, 237);
-    margin-top: 22px;
-    
-}
-.down .lode{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    text-align: center;
-    padding: 33px;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
+  }
+  
+  .footer {
     background-color: black;
     padding: 44px;
     color: white;
-}
+    text-align: center;
+  }
+  
+  .main {
+    min-height: calc(100vh - 88px); /* Adjust the height to account for the navigation bar */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically on smaller screens */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 90%;
+    max-width: 440px; /* Make the card responsive and adjust to different screen sizes */
+    height: auto;
+    background-color: #322f2fc1;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .card {
+      width: 90%; /* Adjust the card width for smaller screens */
+      margin: 20px auto; /* Adjust the card margin for smaller screens */
+    }
+  }
+  

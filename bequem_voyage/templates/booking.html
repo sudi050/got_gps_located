@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,23 +16,66 @@
             background-size: cover;
             background-position: center;
             font-family: Arial, sans-serif;
-        }
-        
-        .message {
+          }
+          
+          .nav {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+          }
+          
+          .nav img {
+            width: 50px;
+          }
+          
+          .message {
             text-align: center;
-        }
-        
-        .message h1 {
+            animation: fade-in 1s ease-in-out;
+          }
+          
+          .message h1 {
             font-size: 32px;
             margin-bottom: 20px;
-        }
-        
-        .message p {
+          }
+          
+          .message p {
             font-size: 20px;
-        }
+          }
+          
+          .message button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #a7e92f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+          }
+          
+          .message button:hover {
+            background-color: #8bcd2b;
+          }
+          
+          @keyframes fade-in {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }          
+          
     </style>
 </head>
 <body>
+
+    <div class="nav">
+        <div class="left">
+            <img src="{% static 'media/bv.svg' %}" alt="">
+        </div>
+    </div>
+
     <div class="message animation">
         <h1>Driver On the Way</h1>
         <p>Please wait, the driver is on the way to pick you up.</p>
