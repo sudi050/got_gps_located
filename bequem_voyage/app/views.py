@@ -135,7 +135,7 @@ def signup(request):
     
         if password == conf_password:
             if User.objects.filter(email=email).exists():
-                messages.info(request,'College ID already exists')
+                messages.info(request,'Mail ID already exists')
                 return redirect('signup')
             else:
                 user = User.objects.create_user(username=username, first_name = firstname, last_name=lastname, email=email, password=password)
