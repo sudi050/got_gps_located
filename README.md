@@ -31,6 +31,11 @@ python manage.py runserver
 
 The app will be available on 127.0.0.1:8000
 
+The Superadmin credentials
+
+               Username: incode
+               Password: incode
+
 ## Screenshots
 
 #### Login
